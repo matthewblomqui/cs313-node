@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Postal Node Project</title>
+        <% include ../partials/boot.ejs %>
+    </head>
+    <body class="bg-light">
+        <div class="container rounded bg-white mt-3">
+            <h2 class="text-center">Rate Results</h2>
+            <hr>
+            <img src="https://pe.usps.com/text/dmm300/Notice123Images/usps.png" alt="USPS.com">
+            <h5>Your postal rate is:</h5>
+            <div class="text-center">
+                <h5>$ <%= price %></h5>
+                <b>Mail Type:</b> <%= mail %>
+                <br>
+                <span class="text-muted" <%= upgrade %>><b class="text-warning">Note:</b> Your mail type has been upgraded due to weight! </span>
+            </div>
+            <form action="/postal">
+                <button type="submit" href="" class="btn btn-block btn-outline-primary mt-3">Return to Form</button>
+            </form>
+        </div>
+    </body>
+</html>

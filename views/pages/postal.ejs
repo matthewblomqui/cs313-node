@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../partials/boot.ejs %>
+</head>
+
+<body class="bg-light">
+
+    <div class="container rounded bg-white mt-3">
+        <h2 class="text-center">Postal Rate Calculator</h2>
+
+        <form action="/postalResults" method="GET">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Weight:</span>
+                </div>
+                <input type="number" class="form-control text-center" placeholder="lbs" name="lbs" min="0" max="70" required>
+                <input type="number" class="form-control text-center" placeholder="oz" name="oz" min="0" max="15" required>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="stamp" value="stamp" name="mail" required>
+                    <label class="custom-control-label" for="stamp">Letters (Stamped)</label>
+                </div>
+
+                <div class="col custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="meter" value="meter" name="mail">
+                    <label class="custom-control-label" for="meter">Letters (Metered)</label>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col"></div>
+                <div class="col custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="flat" value="flat" name="mail">
+                    <label class="custom-control-label" for="flat">Large Envolopes (Flats)</label>
+                </div>
+
+                <div class="col custom-control custom-radio custom-control-inline">
+                    <input type="radio" class="custom-control-input" id="first" value="first" name="mail">
+                    <label class="custom-control-label" for="first">First-Class Package Service - Retail</label>
+                </div>
+                <div class="col"></div>
+            </div>
+
+            <button type="submit" class="btn btn-block btn-outline-success mt-3">Calculate</button>
+            <br>
+        </form>
+    </div>
+
+</body>
+
+</html>

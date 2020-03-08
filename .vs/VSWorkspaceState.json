@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\public",
+    "\\public\\stylesheets",
+    "\\views",
+    "\\views\\pages",
+    "\\views\\partials"
+  ],
+  "SelectedNode": "\\views\\partials\\boot.ejs",
+  "PreviewInSolutionExplorer": false
+}
