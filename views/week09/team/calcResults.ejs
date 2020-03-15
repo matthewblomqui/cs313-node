@@ -2,11 +2,14 @@
 <html>
 
 <head>
-    <% include ../partials/boot.ejs %>
+    <% include ../../partials/boot.ejs %>
 </head>
 
 <body>
     <h3>Here is some simple math -> <%= num1 %> + <%= num2 %> = <%= sum %>
+    <form action="/math">
+        <button type="submit">Back</button>
+    </form>
 </body>
 
 </html>

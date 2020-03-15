@@ -1,6 +1,6 @@
 function get_math(req, res) {
    sum = Number(req.query.num1) + Number(req.query.num2)
-   res.render('pages/calcResults', {num1: req.query.num1, num2: req.query.num2, sum: sum})
+   res.render('week09/team/calcResults', {num1: req.query.num1, num2: req.query.num2, sum: sum})
 }
 
 function lookUp(stuff) {
@@ -69,7 +69,7 @@ function calc_rate(req, res) {
 
    console.log(Number(price).toFixed(2))
    // Off to the results page
-   res.render('pages/postalResults', { price: Number(price).toFixed(2), mail: mail, upgrade: upgrade} )
+   res.render('week09/prove/postalResults', { price: Number(price).toFixed(2), mail: mail, upgrade: upgrade} )
 }
 
 module.exports = { get_math: get_math, calc_rate: calc_rate };

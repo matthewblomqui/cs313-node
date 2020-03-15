@@ -40,7 +40,7 @@ function playGame(req, res) {
 
     var stuff = { player: player, cpu: cpu, winner: winner };
 
-    res.render('pages/gameResults', stuff);
+    res.render('week09/class/gameResults', stuff);
 }
 
 module.exports = { playGame: playGame };
